@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="estilos/carrinho.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">BigMarket</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    
+    <section class="products">
+        <h2>Seu Carrinho de Compras</h2>
+        <div class="product-grid cart-items"></div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="fotos/maça.webp" alt="Maçã">
+                <h3>Maçã</h3>
+                <p>R$ 3,99/kg</p>
+                <button class="ret">Retirar do Carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="fotos/banana.jpg" alt="Banana">
+                <h3>Banana</h3>
+                <p>R$ 2,99/kg</p>
+                <button class="ret">Retirar do Carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="fotos/cenoura.webp" alt="Cenoura">
+                <h3>Cenoura</h3>
+                <p>R$ 4,49/kg</p>
+                <button class="ret">Retirar do Carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="fotos/leite.png" alt="Leite">
+                <h3>Leite</h3>
+                <p>R$ 3,29/L</p>
+                <button class="ret">Retirar do Carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="fotos/pao.jpg" alt="Pão">
+                <h3>Pão fatiado </h3>
+                <p>R$ 5,99/un</p>
+                <button class="ret">Retirar do Carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="fotos/tomate.jpg" alt="Tomate">
+                <h3>Tomate</h3>
+                <p>R$ 6,49/kg</p>
+                <button class="ret">Retirar do Carrinho</button>
+            </div>
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total-price">R$ 27,24</span></p>
+        </div>
+        <a class="pg" href="pagamento.html">Finalizar Compra</a>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2024 BigMarket. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
