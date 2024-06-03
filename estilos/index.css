@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@200..700&family=Permanent+Marker&family=Rubik+Mono+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    background: radial-gradient(circle at 10% 20%, rgb(248, 248, 218) 0%, rgb(244, 232, 207) 90%);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 10vw;
+}
+
+.fontenome{
+    color: white;
+    font-size: 5vw;
+}
+
+.fontepreco{
+    color: white;
+    font-size: 4vw
+}
+
+#logo{
+    width: 12vw;
+}
+
+.infos{
+    padding: 5px;
+}
+
+.infos> a{
+    text-decoration: none;
+    font-size: 5vw;
+}
+
+.imagens{
+    background-image: url(../ivasko.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#grade{
+    margin: auto;
+    display: blue;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    width: 80vw;
+    gap: 4vw;
+    margin-bottom: 10vh;
+}
+
+.mercado{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    height: 30vw;
+    border-radius: 5px;
+}
+
+#cupons{
+    font-family: "Oswald", sans-serif;
+    background-color: goldenrod;
+    text-align: center;
+    font-size: 4vw;
+    padding: 10px;
+    margin-bottom: 10vh;
+}
+
+.fontepreco, .fontenome{
+    color: black;
+    padding: 0px;
+}
+
+#cupons>h1{
+    color: white;
+    margin: 0;
+    margin-bottom: 5px;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.caixa{
+    padding: 5px;
+    width: 80%;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.caixa>h2{
+    font-size: 4vw;
+}
+
+.imgcupom{
+    border-radius: 5px;
+    background-color: orange;
+    width: 30%;
+    padding: 5px;
+}
+
+.imagens{
+    background-color: orange;
+}
+
+
+nav>a{
+    color: white;
+    text-decoration: none;
+    width: 5vw;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: orange;
+}
+
+footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    text-align: center;
+    font-size: 2vw;
+    height: 10vh;
+}
+
+@media (min-width: 500px){
+    header{
+        height: 10vh;
+    }
+    #logo{
+        width: 8vw;
+    }
+    nav>a{
+        padding: 5px 20px 5px 20px;
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 800px){
+    #grade{
+        width: 95vw;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    header{
+        margin-bottom: 30px;
+    }
+
+    #logo{
+        width: 80px;
+    }
+
+    nav>a{
+        padding: 4px 18px 4px 18px;
+        font-size: 1.5rem;
+    }
+
+    .mercado{
+        grid-template-columns: repeat(2, 40% 60%);
+        height: 25vh;
+    }
+
+    .imagens{
+        height: 100%;
+    }
+
+    .infos{
+        overflow: hidden;
+    }
+
+    .infos>a{
+        font-size: 2rem;
+    }
+
+    .fontepreco{
+        font-size: 1.5rem;
+    }
+
+    .caixa{
+        text-align: center;
+        height: 15vh;
+    }
+
+    .caixa>h2{
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #cupons>h1{
+        font-size: 2rem;
+    }
+
+    footer>h1{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1000px){
+    #grade{
+        width: 1000px;
+
+    }
+}
